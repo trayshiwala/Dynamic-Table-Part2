@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input {
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+button {
+    padding: 5px 10px;
+    margin-top: 10px;
+}
+
+#errorContainer {
+    margin-top: 10px;
+}
+
+#tableContainer {
+    overflow: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 5px;
+    text-align: center;
+}
+
+th {
+    background-color: blue;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.fixed-header {
+    position: sticky;
+    top: 0;
+    background: blue;
+    color: white;
+    z-index: 1;
+}
+
+/* Styles for jQuery UI Tabs */
+#tabs {
+    margin-top: 20px;
+}
+
+.ui-tabs .ui-tabs-panel {
+    padding: 10px;
+}
+
+.ui-tabs .ui-tabs-nav li {
+    position: relative;
+    padding-right: 50px; /* Space for the close button */
+}
+
+.ui-tabs .ui-tabs-nav .close-tab,
+.ui-tabs .ui-tabs-nav .select-tab {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.ui-tabs .ui-tabs-nav .close-tab {
+    right: 5px;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    color: red;
+    border: none;
+    background: none;
+}
+
+.ui-tabs .ui-tabs-nav .select-tab {
+    left: 0;
+    margin-right: 10px;
+}
+
+/* Styles for error messages */
+.error {
+    color: red;
+    font-weight: bold;
+}

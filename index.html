@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Multiplication Table with jQuery UI</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+</head>
+<body>
+    <h1>Interactive Dynamic Multiplication Table</h1>
+    <form id="multiplicationForm">
+        <label for="startRow">Start Row:</label>
+        <input type="number" id="startRow" name="startRow" required>
+        <div id="startRowSlider"></div>
+
+        <label for="endRow">End Row:</label>
+        <input type="number" id="endRow" name="endRow" required>
+        <div id="endRowSlider"></div>
+
+        <label for="startCol">Start Column:</label>
+        <input type="number" id="startCol" name="startCol" required>
+        <div id="startColSlider"></div>
+
+        <label for="endCol">End Column:</label>
+        <input type="number" id="endCol" name="endCol" required>
+        <div id="endColSlider"></div>
+
+        <button type="submit">Generate Table</button>
+    </form>
+    <div id="errorContainer"></div>
+    <div id="tableContainer"></div>
+
+    <div id="tabs">
+        <ul></ul>
+    </div>
+    <button id="deleteSelectedTabs" style="display:none;">Delete Selected Tabs</button>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
